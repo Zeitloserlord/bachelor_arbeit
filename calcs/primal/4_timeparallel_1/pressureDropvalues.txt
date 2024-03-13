@@ -1,0 +1,58 @@
+
+
+=============================================================================
+
+                         LOGFILE 4_timeparallel_1
+
+=============================================================================
+
+
+
+Shooting of sweep1:
+---------------------------------
+
+Elapsed time for pimpleDyMFoam in sweep1: 2 minutes and 31.544 seconds.
+
+pressureDrop is     7.45497e-06
+
+Elapsed time for linearisedPimpleDyMFoam in sweep1: 2 minutes and 15.952 seconds.
+
+Elapsed time for subintervals in sweep1: 5 minutes and 23.275 seconds.
+
+
+Shooting of sweep2:
+---------------------------------
+
+Elapsed time for pimpleDyMFoam in sweep2: 3 minutes and 21.821 seconds.
+
+pressureDrop is     1.11439e-07
+
+Elapsed time for linearisedPimpleDyMFoam in sweep2: 2 minutes and 19.282 seconds.
+
+Elapsed time for subintervals in sweep2: 6 minutes and 21.373 seconds.
+
+
+Shooting of sweep3:
+---------------------------------
+
+Elapsed time for pimpleDyMFoam in sweep3: 2 minutes and 39.245 seconds.
+
+pressureDrop is     1.0132e-07
+
+Elapsed time for linearisedPimpleDyMFoam in sweep3: 2 minutes and 8.353 seconds.
+
+Elapsed time for subintervals in sweep3: 5 minutes and 29.909 seconds.
+
+
+Shooting of sweep4:
+---------------------------------
+
+Elapsed time for pimpleDyMFoam in sweep4: 2 minutes and 45.969 seconds.
+
+pressureDrop is     1.09282e-07
+
+Elapsed time for linearisedPimpleDyMFoam in sweep4: 1 minutes and 29.756 seconds.
+
+Elapsed time for subintervals in sweep4: 4 minutes and 44.96 seconds.
+
+Elapsed time for 4_timeparallel_1 in sweep4: 22 minutes and 0.507 seconds.

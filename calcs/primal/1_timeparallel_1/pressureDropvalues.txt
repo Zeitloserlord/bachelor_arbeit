@@ -1,0 +1,22 @@
+
+
+=============================================================================
+
+                         LOGFILE 1_timeparallel_1
+
+=============================================================================
+
+
+
+Shooting of sweep1:
+---------------------------------
+
+Elapsed time for pimpleDyMFoam in sweep1: 12 minutes and 35.618 seconds.
+
+pressureDrop is     1.0928e-07
+
+Elapsed time for linearisedPimpleDyMFoam in sweep1: 0 minutes and 0.001 seconds.
+
+Elapsed time for subintervals in sweep1: 21 minutes and 31.402 seconds.
+
+Elapsed time for 1_timeparallel_1 in sweep1: 21 minutes and 32.198 seconds.
