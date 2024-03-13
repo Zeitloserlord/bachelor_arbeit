@@ -1,0 +1,62 @@
+
+
+=============================================================================
+
+                         LOGFILE 4_timeparallel_1
+
+=============================================================================
+
+
+Elapsed time for enhancedAdjointPimpleDyMFoam in sweep1: 3 minutes and 6.688 seconds.
+adjointPressureDrop is     0.00334527
+
+Elapsed time for adjointLinearisedPimpleDyMFoam in sweep1: 2 minutes and 3.633 seconds.
+
+Elapsed time for sweep1 in adjoint folder: 1 minutes and 0.363 seconds.
+
+Elapsed time for adjoint_subintervals in sweep1: 6 minutes and 50.215 seconds.
+
+
+Adjoint shooting of sweep1:
+---------------------------------
+
+Elapsed time for enhancedAdjointPimpleDyMFoam in sweep2: 3 minutes and 9.367 seconds.
+adjointPressureDrop is     0.000204173
+
+Elapsed time for adjointLinearisedPimpleDyMFoam in sweep2: 2 minutes and 18.76 seconds.
+
+Elapsed time for sweep2 in adjoint folder: 0 minutes and 56.264 seconds.
+
+Elapsed time for adjoint_subintervals in sweep2: 7 minutes and 5.855 seconds.
+
+
+Adjoint shooting of sweep2:
+---------------------------------
+
+Elapsed time for enhancedAdjointPimpleDyMFoam in sweep3: 2 minutes and 56.944 seconds.
+adjointPressureDrop is     0.00151706
+
+Elapsed time for adjointLinearisedPimpleDyMFoam in sweep3: 2 minutes and 23.604 seconds.
+
+Elapsed time for sweep3 in adjoint folder: 2 minutes and 29.831 seconds.
+
+Elapsed time for adjoint_subintervals in sweep3: 8 minutes and 46.811 seconds.
+
+
+Adjoint shooting of sweep3:
+---------------------------------
+
+Elapsed time for enhancedAdjointPimpleDyMFoam in sweep4: 3 minutes and 12.354 seconds.
+adjointPressureDrop is     0.00205866
+
+Elapsed time for adjointLinearisedPimpleDyMFoam in sweep4: 2 minutes and 41.874 seconds.
+
+Elapsed time for sweep4 in adjoint folder: 0 minutes and 0.002 seconds.
+
+Elapsed time for adjoint_subintervals in sweep4: 7 minutes and 30.662 seconds.
+
+
+Adjoint shooting of sweep4:
+---------------------------------
+
+Elapsed time for adjoint_computation in 4_timeparallel_1: 34 minutes and 8.389 seconds.
