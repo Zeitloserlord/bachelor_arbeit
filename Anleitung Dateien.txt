@@ -1,0 +1,35 @@
+Anleitung für den Code und die Ergebnisse
+
+Code in Ordner Code
+
+Eingangsdatei:
+main.py
+
+Einstellung für Speicherorte und Durchlauf- und Prozessoranzahlen:
+config.py
+
+In Unterordner src:
+
+Datei für primäre Lösungsalgorithmen:
+primal_solvers.py
+
+Datei für adjungierte Lösungsalgorithmen:
+adjoint_solvers.py
+
+Dateien mit Funktionen zur Vor- und Nachbereitung wie Kopieren von Dateien:
+pre_processing.py und post_processing.py
+
+Sonderfunktionen wie Vorbereitung auf Durchlauf 1
+boundary_conditions.py
+
+
+
+Ergebnisse in Ordner calcs
+
+Unterordner für primäre und adjungierte Ergebnisse und Bilder
+Bilder in Unterordner Graphs mit .plot Dateien zur Erstellung
+
+primäre und adjungierte Ergebnisse:
+Beginnname der Ordner ist die Schießintervallanzahl
+Ergebnisse bei primären Dateien in Datei logtable.csv Dateien
+Ergebnisse bei adjungierten Dateien in Datei adjointlogtable.csv
