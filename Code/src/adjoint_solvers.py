@@ -63,7 +63,6 @@ def adjoint_linearised_pimpledymfoam(basepath, folder_name, sweep_name, i):
     lin_pimple_path = basepath + folder_name + "/" + sweep_name + "/" + interval_name
     os.chdir(lin_pimple_path)
     with open("adjoint_lin_logfile" + sweep_name + "_" + interval_name + ".txt", "w") as logfile:
-        # TODO: try the function with underline
         subprocess.run(['linearisedAdjointPimpleDyMFoam'], stdout=logfile, stderr=subprocess.STDOUT)
         # subprocess.run(['linearisedPimpleDyMFoam'])
     print("Adjoint linearization of " + interval_name + " is done. Writing into lin_logfile ...")
@@ -84,7 +83,6 @@ def loop_linearised_adjoint_pimpledymfoam(folder_name, sweep_name, k):
     pre.prepare_next_adjoint_linearization(ADJOINT_PATH, folder_name, k)
     start_time = time.time()
     with futures.ProcessPoolExecutor(max_workers=MAX_CPU) as executor:
-        # Todo put in (2, n - k + 1) for necessary calculations only, (2, n) for all calcs
         for i in range(2, n - k + 1):  # k.essayer 2, on ne lin pas dans 1, avant 1, n+1
             executor.submit(adjoint_linearised_pimpledymfoam, ADJOINT_PATH, folder_name, sweep_name, i)
             # adjointLinearisedPimpleDyMFoam(adjoint_path, folder_name, sweep_name, i)
@@ -133,7 +131,6 @@ def loop_computeAdjointNewtonUpdate(basepath, folder_name, sweep_name, k):
     start_time_ad_pimple = time.time()
     print("\nComputing Adjoint Newton Update...")
     with futures.ProcessPoolExecutor(max_workers=MAX_CPU) as executor:
-        # ToDo keep it this way to calculate correct
         for i in range(n-k, 1, -1):
             executor.submit(computeAdjointNewtonUpdate, basepath, sweep_name, i, k)
     #            #        computeAdjointNewtonUpdate(basepath, sweep_name, i, k)
@@ -146,7 +143,6 @@ def loop_computeAdjointNewtonUpdate(basepath, folder_name, sweep_name, k):
                 #executor.submit(post.prepare_adjoint_fixed_primal, basepath, folder_name, sweep_name, k, interval_name,
                 #                i)  # Fixed solution
                 post.prepare_adjoint_fixed_primal(basepath, folder_name, sweep_name, k, interval_name, i)
-    # ToDo put in range(n - k + 1, 1, -1) for only necessary calculations, range(n, 1, -1) for all calcs
     if k < n:
         for i in range(n - k + 1, 1, -1):
             interval_name = interval.format(i)
@@ -185,21 +181,17 @@ def computeAdjoint(basepath, erasing, event):
         sweep_name = sweep.format(k)
 
         # Computing Adjoint Pimple
-        # TODO put k instead of 1 for only necessary calculations
         loop_adjoint_pimpledymfoam(FOLDER_NAME, sweep_name, k)
 
         # Computing Adjoint Defect
         print("\nADJOINT DEFECT...\n")
-        # TODO put k instead of 1 for only necessary calculations
         compute_adjoint_defect(ADJOINT_PATH, sweep_name, k)
 
         # Computing Adjoint Linearization
         print("\nADJOINT LINEARIZATION...\n")
-        # TODO in Loop
         loop_linearised_adjoint_pimpledymfoam(FOLDER_NAME, sweep_name, k)
 
         # Starting Adjoint Newton Update AND PREPARING NEXT SWEEP
-        # TODO in loop
         loop_computeAdjointNewtonUpdate(ADJOINT_PATH, FOLDER_NAME, sweep_name, k)
 
         # Deleting Files after Sweep k Done

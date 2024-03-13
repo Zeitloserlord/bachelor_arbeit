@@ -43,9 +43,7 @@ def loop_pimpledymfoam(basepath, folder_name, sweep_name,
     print("Starting EXECUTOR ... \n")
     timer_pimpledymfoam = time.time()
 
-    # ToDo: put in own function and track the time
     with futures.ProcessPoolExecutor(max_workers=MAX_CPU) as executor:
-        # Todo reset 1 to k for only necessary calculations, (1, n + 1) for all
         for i in range(k, n + 1):
             executor.submit(pimpledymfoam, basepath, folder_name, sweep_name, i)
             print("Starting pimpleDyMFoam for interval " + str(i))
@@ -97,11 +95,9 @@ def loop_linearised_pimpledymfoam(basepath, folder_name, sweep_name, k):
     print("\nStarting linearization of " + sweep_name + "\n")
     print("Starting LIN EXECUTOR ... \n")
 
-    # ToDO change to k +1 für only necessary calculations
     for i in range(k + 1, n + 1):
         pre.prepare_next_linearization(basepath, folder_name, k, i)
     with futures.ProcessPoolExecutor(max_workers=MAX_CPU) as executor:
-        # ToDO change to k +1 für only necessary calculations
         for i in range(k + 1, n + 1):  # k.essayer 2, on ne lin pas dans 1
             executor.submit(linearised_pimpledymfoam, basepath, folder_name, sweep_name, i)
             print("Starting linearisedPimpleDyMFoam for interval " + str(i))
@@ -203,7 +199,6 @@ def primal_shooting_stef_update(basepath, erasing, event):
         loop_pimpledymfoam(basepath, FOLDER_NAME, sweep_name, k)  # One sync version
 
         # Newline for defect
-        # TODO put k instead of 1 for only necessary calculations
         loop_compute_defect(basepath, sweep_name, k)
 
         if k == 2:
@@ -211,11 +206,9 @@ def primal_shooting_stef_update(basepath, erasing, event):
             # event.set()
 
         # Starting linearization for Sweep k over all sub intervals
-        # TODO in function
         loop_linearised_pimpledymfoam(basepath, FOLDER_NAME, sweep_name, k)  # One sync version
 
         # Starting Newton Update
-        # TODO nothing to do because of small computing time
         loop_compute_newton_update(basepath, FOLDER_NAME, sweep_name, k)
 
         # Deleting calculated files and creating log files from sweep k-1 after Sweep k done, starting with sweep 2

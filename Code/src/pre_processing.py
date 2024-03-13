@@ -132,7 +132,6 @@ def prepare_shooting_update(basepath, folder_name, sweep_name, k,
     shutil.copy(src_lin_p, dest_lin_p)
 
     # Copy of constant and system files
-    # ToDO was ist, wenn preprocesing existiert, aber /nicht --> abfangen
     if not os.path.exists(basepath + folder_name + "/" + sweep_name + "/preProcessing/constant/"):
         src_constant = basepath + folder_name + "/" + sweep_name + "/" + interval.format(i) + "/constant/"
         src_system = basepath + folder_name + "/" + sweep_name + "/" + interval.format(i) + "/system/"
@@ -244,7 +243,6 @@ def prepare_next_linearization(basepath, folder_name, k, i):
     linU_path = basepath + folder_name + "/" + sweep_name + "/" + interval_name + "/shootingDefect/0/linUDefect"
 
     with futures.ProcessPoolExecutor(max_workers=MAX_CPU) as executor:
-        # ToDO change to k +1 für only necessary calculations
         for i in range(1 + 1, n + 1):  # avant c'était
             executor.submit(copy_linearization, basepath, folder_name, sweep_name, i, linP_path, linU_path,
                             fvSchemes_path, fvSolution_path)
