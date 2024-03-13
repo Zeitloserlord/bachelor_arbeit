@@ -1,0 +1,140 @@
+
+
+=============================================================================
+
+                         LOGFILE 10_timecompare_1
+
+=============================================================================
+
+
+Elapsed time for enhancedAdjointPimpleDyMFoam in sweep1: 1 minutes and 21.764 seconds.
+adjointPressureDrop is     0.00321261
+
+Elapsed time for adjointLinearisedPimpleDyMFoam in sweep1: 0 minutes and 56.185 seconds.
+
+Elapsed time for sweep1 in adjoint folder: 0 minutes and 39.927 seconds.
+
+Elapsed time for adjoint_subintervals in sweep1: 3 minutes and 40.001 seconds.
+
+
+Adjoint shooting of sweep1:
+---------------------------------
+
+Elapsed time for enhancedAdjointPimpleDyMFoam in sweep2: 1 minutes and 22.358 seconds.
+adjointPressureDrop is     0.00375958
+
+Elapsed time for adjointLinearisedPimpleDyMFoam in sweep2: 0 minutes and 58.593 seconds.
+
+Elapsed time for sweep2 in adjoint folder: 1 minutes and 13.607 seconds.
+
+Elapsed time for adjoint_subintervals in sweep2: 4 minutes and 29.462 seconds.
+
+
+Adjoint shooting of sweep2:
+---------------------------------
+
+Elapsed time for enhancedAdjointPimpleDyMFoam in sweep3: 1 minutes and 12.347 seconds.
+adjointPressureDrop is     0.00198859
+
+Elapsed time for adjointLinearisedPimpleDyMFoam in sweep3: 1 minutes and 1.794 seconds.
+
+Elapsed time for sweep3 in adjoint folder: 1 minutes and 0.347 seconds.
+
+Elapsed time for adjoint_subintervals in sweep3: 4 minutes and 12.871 seconds.
+
+
+Adjoint shooting of sweep3:
+---------------------------------
+
+Elapsed time for enhancedAdjointPimpleDyMFoam in sweep4: 1 minutes and 9.529 seconds.
+adjointPressureDrop is     0.000435633
+
+Elapsed time for adjointLinearisedPimpleDyMFoam in sweep4: 0 minutes and 55.904 seconds.
+
+Elapsed time for sweep4 in adjoint folder: 0 minutes and 54.424 seconds.
+
+Elapsed time for adjoint_subintervals in sweep4: 4 minutes and 1.23 seconds.
+
+
+Adjoint shooting of sweep4:
+---------------------------------
+
+Elapsed time for enhancedAdjointPimpleDyMFoam in sweep5: 1 minutes and 7.996 seconds.
+adjointPressureDrop is     0.000647853
+
+Elapsed time for adjointLinearisedPimpleDyMFoam in sweep5: 0 minutes and 53.623 seconds.
+
+Elapsed time for sweep5 in adjoint folder: 0 minutes and 50.939 seconds.
+
+Elapsed time for adjoint_subintervals in sweep5: 3 minutes and 52.318 seconds.
+
+
+Adjoint shooting of sweep5:
+---------------------------------
+
+Elapsed time for enhancedAdjointPimpleDyMFoam in sweep6: 1 minutes and 3.936 seconds.
+adjointPressureDrop is     0.000996927
+
+Elapsed time for adjointLinearisedPimpleDyMFoam in sweep6: 0 minutes and 50.888 seconds.
+
+Elapsed time for sweep6 in adjoint folder: 0 minutes and 47.556 seconds.
+
+Elapsed time for adjoint_subintervals in sweep6: 3 minutes and 45.274 seconds.
+
+
+Adjoint shooting of sweep6:
+---------------------------------
+
+Elapsed time for enhancedAdjointPimpleDyMFoam in sweep7: 1 minutes and 4.714 seconds.
+adjointPressureDrop is     0.00140985
+
+Elapsed time for adjointLinearisedPimpleDyMFoam in sweep7: 0 minutes and 48.161 seconds.
+
+Elapsed time for sweep7 in adjoint folder: 0 minutes and 48.447 seconds.
+
+Elapsed time for adjoint_subintervals in sweep7: 3 minutes and 41.697 seconds.
+
+
+Adjoint shooting of sweep7:
+---------------------------------
+
+Elapsed time for enhancedAdjointPimpleDyMFoam in sweep8: 1 minutes and 2.331 seconds.
+adjointPressureDrop is     0.00159711
+
+Elapsed time for adjointLinearisedPimpleDyMFoam in sweep8: 0 minutes and 46.615 seconds.
+
+Elapsed time for sweep8 in adjoint folder: 0 minutes and 50.213 seconds.
+
+Elapsed time for adjoint_subintervals in sweep8: 3 minutes and 42.631 seconds.
+
+
+Adjoint shooting of sweep8:
+---------------------------------
+
+Elapsed time for enhancedAdjointPimpleDyMFoam in sweep9: 0 minutes and 59.08 seconds.
+adjointPressureDrop is     0.00180659
+
+Elapsed time for adjointLinearisedPimpleDyMFoam in sweep9: 0 minutes and 0.001 seconds.
+
+Elapsed time for sweep9 in adjoint folder: 1 minutes and 4.79 seconds.
+
+Elapsed time for adjoint_subintervals in sweep9: 3 minutes and 36.548 seconds.
+
+
+Adjoint shooting of sweep9:
+---------------------------------
+
+Elapsed time for enhancedAdjointPimpleDyMFoam in sweep10: 0 minutes and 55.142 seconds.
+adjointPressureDrop is     0.0020332
+
+Elapsed time for adjointLinearisedPimpleDyMFoam in sweep10: 0 minutes and 0.001 seconds.
+
+Elapsed time for sweep10 in adjoint folder: 0 minutes and 0.001 seconds.
+
+Elapsed time for adjoint_subintervals in sweep10: 2 minutes and 6.128 seconds.
+
+
+Adjoint shooting of sweep10:
+---------------------------------
+
+Elapsed time for adjoint_computation in 10_timecompare_1: 37 minutes and 19.107 seconds.
